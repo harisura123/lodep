@@ -10,7 +10,7 @@ function Signup() {
     axios.defaults.withCredentials = true;
     const onSign = event => {
         event.preventDefault()
-        axios.post('https://backend-lo.vercel.app/register', {username, email, password})
+        axios.post('https://lodep.vercel.app/register', {username, email, password})
         .then(result => {console.log(result)
             navigate('/')
         })
