@@ -6,7 +6,7 @@ const MongooseLogin = require('./models/Login')
 app.use(express.json())
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://lodep-frontend.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
